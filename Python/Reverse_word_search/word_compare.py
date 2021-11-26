@@ -17,7 +17,6 @@ file = open('new_perm_words.txt', "w")
 file.write(new_perm)
 file.close()
 
-
 # open perm words
 perm_file = set(line.strip() for line in open('new_perm_words.txt'))
 
