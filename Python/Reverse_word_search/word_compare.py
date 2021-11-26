@@ -17,14 +17,23 @@ file = open('new_perm_words.txt', "w")
 file.write(new_perm)
 file.close()
 
-# open perm words
-perm_file = set(line.strip() for line in open('new_perm_words.txt'))
 
-# open dictionary
-dictionary = set(line.strip() for line in open('words_dictionary.txt'))
+# with open("t_perm.txt") as f1, open("t_dict.txt") as f2:
 
-for line in perm_file & dictionary:
 
-    if line:
+textfile = file('results.txt', 'wt')
 
-        print(line)
+perm1 = open("t_perm.txt", "r")
+dict1 = open("t_dict.txt", "r")
+result = open("results.txt", "a")
+
+list1 = perm1.readlines()
+list2 = dict1.readlines()
+
+result.write("The following entries appear in both lists: \n")
+
+for i in list1:
+    for j in list2:
+        if i==j:
+            #result.write(i)
+            print(result)
