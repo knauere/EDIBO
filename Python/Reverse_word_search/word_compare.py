@@ -18,6 +18,7 @@ file.close()
 perm_file = set(line.strip() for line in open('new_perm_words.txt'))
 dict_file = set(line.strip() for line in open('words_dictionary.txt'))
 
+# create loop for matching words in both files, print if found match
 for i in perm_file:
     for j in dict_file:
         if i == j:
