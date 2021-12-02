@@ -10,8 +10,8 @@ export interface IGeoPos {
 
 export class GeoPos implements IGeoPos {
 
-    public lat: number = 1;
-    public lng: number = 1;
+    lat: number = 1;
+    lng: number = 1;
 
     constructor(lat: number, lng: number) {
         this.lat = lat;

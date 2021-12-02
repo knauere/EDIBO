@@ -22,3 +22,4 @@ import {GeoPos, IGeoPos} from './models/geopoint.ts';
 import {IField} from './models/field.ts';
 // @ts-ignore
 import {IDevice} from './models/device.ts';
+
