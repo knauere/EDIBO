@@ -1,7 +1,11 @@
 // @ts-ignore
 import {IGeoPos} from "./geopoint.ts";
 // @ts-ignore
+import {GeoPos} from "./geopoint.ts";
+// @ts-ignore
 import {IDevice} from "./device.ts";
+// @ts-ignore
+import {Device} from "./device.ts";
 
 export interface IField {
     setName(name: string): void;
@@ -41,5 +45,7 @@ class Field implements IField {
 }
 
 const field: IField = new Field();
-field.setName('Meza lauks');
-//field.putDevice(new Device: Device)
+field.setName('LU Botāniskais dārzs');
+console.log(field)
+const fieldPos: GeoPos = new GeoPos(56.95105039638951, 24.059670281190392);
+console.log(fieldPos)

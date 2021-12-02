@@ -34,8 +34,3 @@ export class GeoPos implements IGeoPos {
 }
 
 
-const fieldPos: GeoPos = new GeoPos(4,5);
-console.log(fieldPos)
-
-// lat: 56.95105039638951, lng: 24.059670281190392
-
