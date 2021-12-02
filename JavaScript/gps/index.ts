@@ -24,6 +24,7 @@ import {IField} from './models/field.ts';
 import {IDevice} from './models/device.ts';
 
 class Field implements IField {
+
 }
 
 class Device implements IDevice {
