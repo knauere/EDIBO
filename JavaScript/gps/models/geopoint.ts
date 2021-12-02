@@ -1,5 +1,3 @@
-// @ts-ignore
-export {IGeoPos} from '../index.ts';
 
 export interface IGeoPos {
     setLatLong(lat: number, lng: number): void;
@@ -10,6 +8,33 @@ export interface IGeoPos {
 }
 
 class GeoPos implements IGeoPos {
-    lat: number;
-    lng: number;
+
+    private lat: number = 1;
+    private lng: number = 1;
+
+    constructor(lat: number, lng: number) {
+        this.lat = lat;
+        this.lng = lng;
+    }
+
+    setLatLong(lat: number, lng: number) {
+        this.lat = lat;
+        this.lng = lng;
+
+    }
+
+    getLat(): number {
+        return this.lat;
+    }
+
+    getLng(): number {
+        return this.lng;
+    }
 }
+
+
+const fieldPos: GeoPos = new GeoPos(4,5);
+console.log(fieldPos)
+
+// lat: 56.95105039638951, lng: 24.059670281190392
+

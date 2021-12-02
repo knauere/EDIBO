@@ -2,8 +2,6 @@
 import {IGeoPos} from "./geopoint.ts";
 // @ts-ignore
 import {IDevice} from "./device.ts";
-// @ts-ignore
-export {IField} from '../index.ts';
 
 export interface IField {
     setName(name: string): void;
@@ -18,14 +16,26 @@ export interface IField {
 
 }
 
-
-
 class Field implements IField {
 
     private name: string = 'No name field';
 
     setName(name: string) {
         this.name = name;
+    }
+
+    listCoordinates(): IGeoPos[] {
+        return [];
+    }
+
+    listDevice(): IDevice[] {
+        return [];
+    }
+
+    putDevice(device: IDevice): void {
+    }
+
+    setCoordinates(points: IGeoPos[]): void {
     }
 
 }

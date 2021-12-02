@@ -1,7 +1,5 @@
 // @ts-ignore
 import {IGeoPos} from "./geopoint.ts";
-// @ts-ignore
-export {IDevice} from '../index.ts';
 
 export interface IDevice {
     setName(name: string): void;
@@ -13,13 +11,19 @@ export interface IDevice {
 }
 
 class Device implements IDevice {
-    //two numbers?
-    coordinates: number;
 
     private name: string = 'No name device';
 
     setName(name: string) {
         this.name = name;
+    }
+
+    // ????
+    listCoordinates(): IGeoPos {
+        return this.listCoordinates()
+    }
+
+    setCoordinates(points: IGeoPos): void {
     }
 
 }
