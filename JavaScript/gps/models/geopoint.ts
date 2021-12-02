@@ -10,5 +10,6 @@ export interface IGeoPos {
 }
 
 class GeoPos implements IGeoPos {
-
+    lat: number;
+    lng: number;
 }

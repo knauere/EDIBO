@@ -4,8 +4,6 @@ import {IGeoPos} from "./geopoint.ts";
 export {IDevice} from '../index.ts';
 
 export interface IDevice {
-    Device();
-
     setName(name: string): void;
 
     setCoordinates(points: IGeoPos): void;
@@ -15,13 +13,16 @@ export interface IDevice {
 }
 
 class Device implements IDevice {
-    name: 'FirstDevice';
     //two numbers?
     coordinates: number;
 
-    Device() {
+    private name: string = 'No name device';
+
+    setName(name: string) {
+        this.name = name;
     }
 
-
-
 }
+
+const device: IDevice = new Device();
+device.setName('FirstDevice');

@@ -22,15 +22,3 @@ import {IGeoPos} from './models/geopoint.ts';
 import {IField} from './models/field.ts';
 // @ts-ignore
 import {IDevice} from './models/device.ts';
-
-class Field implements IField {
-
-}
-
-class Device implements IDevice {
-}
-
-class GeoPoint implements IGeoPos {
-    lat: number;
-    lng: number;
-}
