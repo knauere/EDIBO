@@ -1,5 +1,7 @@
 // @ts-ignore
 import {IGeoPos} from "./geopoint.ts";
+// @ts-ignore
+import {GeoPos} from "./geopoint.ts";
 
 export interface IDevice {
     setName(name: string): void;
@@ -14,7 +16,7 @@ class Device implements IDevice {
 
     private name: string = 'No name device';
     // ???
-    private points: IGeoPos = 0;
+    private points: IGeoPos = new GeoPos(0,0);
 
     setName(name: string) {
         this.name = name;

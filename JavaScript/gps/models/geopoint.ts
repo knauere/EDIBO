@@ -1,4 +1,5 @@
 
+
 export interface IGeoPos {
     setLatLong(lat: number, lng: number): void;
 
@@ -7,10 +8,10 @@ export interface IGeoPos {
     getLng():number;
 }
 
-class GeoPos implements IGeoPos {
+export class GeoPos implements IGeoPos {
 
-    private lat: number = 1;
-    private lng: number = 1;
+    public lat: number = 1;
+    public lng: number = 1;
 
     constructor(lat: number, lng: number) {
         this.lat = lat;
