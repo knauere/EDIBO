@@ -1,28 +1,97 @@
+
+
 body {
   background: gray;
-  margin: 0
+  width:80vw;
+  height: 80vh;
+  margin: 0 auto;
+  border: 20px solid blue;
+  position: relative;
+}
+
+
+.heroPos {
+  width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0;
+  border: 20px solid black;
 }
 
 .hero {
-  width: 75px;
+  margin-right:auto;
+  border: 1px solid red;
+  width: 60px;
   height: 100px;
   position: fixed;
   transition: all 200ms;
-  background: transparent url('pngfind.com-ayy-lmao-png-6422951.png') no-repeat 0 0 ;
-  animation: edgaraAnimacija 1s steps(2) infinite;
+  background: transparent url('hero_1.png') no-repeat 0 0;
+  animation: AniRight 1s steps(3) infinite;
 }
 
-@keyframes edgaraAnimacija {
+.heroL {
+  margin-right:auto;
+  border: 1px solid red;
+  width: 60px;
+  height: 100px;
+  position: fixed;
+  transition: all 200ms;
+  background: transparent url('hero_1.png') no-repeat 0 0;
+  animation: AniLeft 1s steps(3) infinite;
+}
+
+@keyframes AniFront {
   0%{
     background-position: 0 0;
   }
   100%{
-    background-position: -150px 0 ;
+    background-position: -120px 0;
+  }
+  100%{
+    background-position: -180px 0;
   }
 }
 
+@keyframes AniLeft {
+  0%{
+    background-position: 0 -100px;
+  }
+  100%{
+    background-position: -120px -100px;
+  }
+  100%{
+    background-position: -180px -100px;
+  }
+}
+
+@keyframes AniRight {
+  0%{
+    background-position: 0 -200px;
+  }
+  100%{
+    background-position: -120px -200px;
+  }
+  100%{
+    background-position: -180px -200px;
+  }
+}
+
+@keyframes AniBack {
+  0%{
+    background-position: 0 -300px;
+  }
+  100%{
+    background-position: -120px -300px;
+  }
+  100%{
+    background-position: -180px -300px;
+  }
+}
+
+
+
 .hero:focus {
-  border-radius: 30px
+  border-radius: 10px;
 }
 
 :focus {
