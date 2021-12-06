@@ -26,21 +26,11 @@ body {
   position: fixed;
   transition: all 200ms;
   background: transparent url('hero_1.png') no-repeat 0 0;
-  animation: AniRight 1s steps(3) infinite;
+  animation: AniBack 1s steps(3) infinite;
+
 }
 
-.heroL {
-  margin-right:auto;
-  border: 1px solid red;
-  width: 60px;
-  height: 100px;
-  position: fixed;
-  transition: all 200ms;
-  background: transparent url('hero_1.png') no-repeat 0 0;
-  animation: AniLeft 1s steps(3) infinite;
-}
-
-@keyframes AniFront {
+@keyframes AniBack {
   0%{
     background-position: 0 0;
   }
@@ -76,7 +66,7 @@ body {
   }
 }
 
-@keyframes AniBack {
+@keyframes AniFront {
   0%{
     background-position: 0 -300px;
   }
@@ -88,8 +78,6 @@ body {
   }
 }
 
-
-
 .hero:focus {
   border-radius: 10px;
 }
@@ -98,3 +86,6 @@ body {
   box-shadow: 0 0 10px black;
 }
 
+.coin {
+  ///
+}
