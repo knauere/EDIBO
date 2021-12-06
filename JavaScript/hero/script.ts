@@ -1,8 +1,15 @@
+//??
+const intViewportHeight = window.innerHeight;
+
 const hero = document.querySelector('.hero');
 
+// const heroPos = {
+//     y: 0,
+//     x: 0,
+// }
 const heroPos = {
-    y: 0,
-    x: 0,
+    y: 60,
+    x: 80,
 }
 
 hero.addEventListener('keydown', event => {
@@ -48,3 +55,8 @@ const moveHero = () => {
 
 
 const coin = document.querySelector('.coin');
+const coinPos = {
+    y: Math.random(),
+    x: Math.random()
+}
+

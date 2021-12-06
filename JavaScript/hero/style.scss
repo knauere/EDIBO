@@ -5,29 +5,19 @@ body {
   width:80vw;
   height: 80vh;
   margin: 0 auto;
-  border: 20px solid blue;
+  border: 10px solid lightblue;
   position: relative;
-}
-
-
-.heroPos {
-  width: inherit;
-  height: inherit;
-  margin: 0 auto;
-  padding: 0;
-  border: 20px solid black;
 }
 
 .hero {
   margin-right:auto;
-  border: 1px solid red;
+  //border: 1px solid red;
   width: 60px;
   height: 100px;
   position: fixed;
   transition: all 200ms;
   background: transparent url('hero_1.png') no-repeat 0 0;
   animation: AniBack 1s steps(3) infinite;
-
 }
 
 @keyframes AniBack {
@@ -83,9 +73,24 @@ body {
 }
 
 :focus {
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 5px white;
 }
 
 .coin {
-  ///
+  top: 500px;
+  left: 500px;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  background: transparent url('coins.png') no-repeat 0 0;
+  animation: AniCoin 1s steps(6) infinite;
+}
+
+@keyframes AniCoin {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -720px;
+  }
 }
