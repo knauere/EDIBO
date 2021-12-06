@@ -1,0 +1,31 @@
+body {
+  background: gray;
+  margin: 0
+}
+
+.hero {
+  width: 75px;
+  height: 100px;
+  position: fixed;
+  transition: all 200ms;
+  background: transparent url('pngfind.com-ayy-lmao-png-6422951.png') no-repeat 0 0 ;
+  animation: edgaraAnimacija 1s steps(2) infinite;
+}
+
+@keyframes edgaraAnimacija {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: -150px 0 ;
+  }
+}
+
+.hero:focus {
+  border-radius: 30px
+}
+
+:focus {
+  box-shadow: 0 0 10px black;
+}
+
